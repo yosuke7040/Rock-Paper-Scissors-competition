@@ -1,8 +1,10 @@
 # Rock-Paper-Scissors
+
 じゃんけんコンペ
 
 ## Basics
 **Overview(DeepL)**
+
 グー、パー、チョキ（時々 roshambo と呼ばれる）は、遊び場の意見の相違を解決したり、誰が道路の旅で前の座席に乗るために取得を決定するための定番となっています。ゲームはシンプルで、力のバランスが取れています。3つの選択肢があり、それぞれが他の2人に勝つか負けるかを選択できます。一連の本当にランダムなゲームでは、それぞれのプレイヤーが勝ったり負けたり、ゲームの大体3分の1を引き分けたりします。しかし、人間は本当にランダムではないので、AIに楽しい機会を与えてくれます。
 
 研究では、グー、パー、チョキAIが一貫して人間の対戦相手を打ち負かすことができることが示されています。過去のゲームをインプットとして、それはパターンを研究してプレイヤーの傾向を理解する。しかし、単純な「ベスト・オブ・3」のゲームを「ベスト・オブ・1000」に拡張するとどうなるのだろうか。人工知能はどれだけのパフォーマンスを発揮できるのでしょうか？
@@ -52,4 +54,6 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
  - 用意してくれてる関数[url](https://github.com/Kaggle/kaggle-environments/blob/master/kaggle_environments/envs/rps/agents.py)
   - 相手がランダムで出してくるレート帯ならstatisticalでカウントして一番出現率の少ない回数に勝つようだすとか
     - もしかしてこれ？[url](https://www.kaggle.com/alexandersamarin/decision-tree-classifier?scriptVersionId=46574034)
+    - それを相手がしてるとしてそれに対して勝つようにする？メタゲーム・・・
+     - ↑これだとランダムに負けないか？
  - ObservationとConfigurationの[url](https://github.com/Kaggle/kaggle-environments/blob/master/kaggle_environments/envs/rps/helpers.py)
