@@ -57,3 +57,29 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
     - それを相手がしてるとしてそれに対して勝つようにする？メタゲーム・・・
      - ↑これだとランダムに負けないか？
  - ObservationとConfigurationの[url](https://github.com/Kaggle/kaggle-environments/blob/master/kaggle_environments/envs/rps/helpers.py)
+
+
+### 20201116
+ - とりあえずall ぐー、チョキ、パーの３種類のagentをsub
+ - 公開notebookにある戦術として
+ |tactics name|content|
+ |------------|-------|
+ |Hit The Last Own Action|自分が最後に出した行動に対して勝つものを出す（hostのサンプルが相手の出した行動を次の自分の行動にするため）|
+ |all rock|全部ぐー|
+ |all paper|全部パー|
+ |all scissors|全部チョキ|
+ |Copy Opponent|相手の最後の行動を真似して出す|
+ |Reactionary|相手が最後に出した行動に対して勝つものを出す|
+ |Counter Reactionary||
+ |Statistical||
+ |Nash Equilibrium||
+ |Markov Agent||
+ |Memory Patterns||
+ |Multi Armed Bandit||
+ |Opponent Transition Matrix||
+ |Decision Tree Classifier||
+ |Statistical Prediction||
+ 
+### 202011--
+ - まずソース解読しないと書けないわ
+ 
