@@ -81,6 +81,12 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
 |Decision Tree Classifier||
 |Statistical Prediction||
  
+### 20201117
+ - まだ提出していないagentの5種類も提出（上の戦術のやつ）
+ - これがデータ定義書らしいjsonだとよ[url](https://github.com/Kaggle/kaggle-environments/blob/master/kaggle_environments/envs/rps/rps.json)
+ - Observation, Configurationのクラスがdefに渡される。このクラスはjsonのデータにアクセスしてる
+ - ちょっと何してるかわかってきた
+ 
 ### 202011--
  - まずソース解読しないと書けないわ
  
