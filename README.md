@@ -72,10 +72,10 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
 |Copy Opponent|相手の最後の行動を真似して出す|
 |Reactionary|相手が最後に出した行動に対して勝つものを出す|
 |Counter Reactionary|・前回自分が勝った時：相手は前回の自分に勝とうとしたのを出してくると予想してそれに勝つものをだす。・前回自分が負けたとき：自分が勝とうとして出すのを相手が読んだのをさらに読んで出す|
-|Statistical||
-|Nash Equilibrium||
-|Markov Agent||
-|Memory Patterns||
+|Statistical|相手が出したactionの統計（サンプルなので、returnは相手が最初に出したやつに勝つやつしか返してない）|
+|Nash Equilibrium|ナッシュ均衡？ランダムにaction返す|
+|Markov Agent|マルコフ連鎖（未来の挙動が現在の値だけで決定され、過去の挙動と無関係であるという性質を持つ確率過程）ちょっと何したいかわからない|
+|Memory Patterns|3回分のじゃんけんの結果から、過去に記録していたパターンと一致するものを探して勝つように出す（見つからなかったらランダム）|
 |Multi Armed Bandit||
 |Opponent Transition Matrix||
 |Decision Tree Classifier||
@@ -95,6 +95,9 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
  - agentの勝利のルールが変わったらしい
  
 ### 20201121
+ - 既存のagentの調査
+
+### 20201122
  - 既存のagentの調査
  
 ### 202011--
