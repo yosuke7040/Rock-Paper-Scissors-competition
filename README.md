@@ -76,7 +76,7 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
 |Nash Equilibrium|ナッシュ均衡？ランダムにaction返す|
 |Markov Agent|マルコフ連鎖（未来の挙動が現在の値だけで決定され、過去の挙動と無関係であるという性質を持つ確率過程）ちょっと何したいかわからない|
 |Memory Patterns|3回分のじゃんけんの結果から、過去に記録していたパターンと一致するものを探して勝つように出す（見つからなかったらランダム）|
-|Multi Armed Bandit||
+|Multi Armed Bandit|マルチアームド・バンディットのアプローチは、強化学習の技術で、最も有望な対抗戦略を選択して、それを使って相手を打ち負かす|
 |Opponent Transition Matrix||
 |Decision Tree Classifier||
 |Statistical Prediction||
@@ -99,6 +99,9 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
 
 ### 20201122
  - 既存のagentの調査
+ 
+### 20201128
+ - Multi-armed bandit vs deterministic agentsでやってるけど過去のデータを予測として使いたかったらcsvにして保存したり読み込んだりする
  
 ### 202011--
  - まずソース解読しないと書けないわ
