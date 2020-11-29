@@ -77,9 +77,9 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
 |Markov Agent|マルコフ連鎖（未来の挙動が現在の値だけで決定され、過去の挙動と無関係であるという性質を持つ確率過程）ちょっと何したいかわからない|
 |Memory Patterns|3回分のじゃんけんの結果から、過去に記録していたパターンと一致するものを探して勝つように出す（見つからなかったらランダム）|
 |Multi Armed Bandit|マルチアームド・バンディットのアプローチは、強化学習の技術で、最も有望な対抗戦略を選択して、それを使って相手を打ち負かす|
-|Opponent Transition Matrix||
+|Opponent Transition Matrix|3つの状態と3x3の遷移行列を持つ単純なマルコフ連鎖を作成|
 |Decision Tree Classifier||
-|Statistical Prediction||
+|Statistical Prediction|ゲーム履歴を構築し、統計的に重み付けされた推測を行い、その予測を対戦相手が実際にプレイしたものと比較する|
  
 ### 20201117
  - まだ提出していないagentの5種類も提出（上の戦術のやつ）
@@ -96,13 +96,21 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
  
 ### 20201121
  - 既存のagentの調査
-
-### 20201122
- - 既存のagentの調査
  
 ### 20201128
  - Multi-armed bandit vs deterministic agentsでやってるけど過去のデータを予測として使いたかったらcsvにして保存したり読み込んだりする
- 
-### 202011--
- - まずソース解読しないと書けないわ
- 
+ - Amazonブラックフライデーセールで自作PCパーツ買った。ヤルゾ
+
+### 20201129
+ - agengtの戦略を解説してくれてる(https://www.kaggle.com/gpreda/rock-paper-scissors-strategies)
+  - Play constantly：常に同じオプション
+  - Nash Equilibrium：この戦略を採用している各プレイヤーは、3つの選択肢のそれぞれが等しい確率で、毎回1/3の確率でプレイするようにランダムにプレイする。補足[url](http://www.science4all.org/article/game-theory/)
+  - Mirror opponent behavior：エージェントは相手の最後の行動をする。この戦略は、相手が一定の戦略を実行している場合は引き分け、そうでない場合は負けるか勝つかの確率が等しいという前提に基づいている。
+  - Mirror opponent behavior with shift：相手の行動に対してシフトした行動を返す。
+  - Shift with constant：1つのステップごとに固定された値で常に自分のプレイをシフト。相手がこちらの戦略をミラーリングしているときにうまく動作
+  - Transition matrix：3つの状態と3x3の遷移行列を持つ単純なマルコフ連鎖を作成します。一様な確率で初期化し、データから遷移行列を学習して相手の次の一手を予測
+  - 現在提出しているscore
+  - ![comp](./data/images/readme/001.png)
+  - opponent_transition_matrixを2つsubしてるけど（なぜだ・・・）スコアが全然違う
+  - 特に戦略として思いつくことがなかったけど、本棚に深層強化学習入門がある。過去のワイグッジョブ。これで何か使えるところないかな。
+  
